@@ -28,3 +28,7 @@ class Bot(commands.Bot):
     def main(self):
         self.load_extensions("src.exts")
         self.run(config["token"])
+
+bot = Bot()
+
+bot.main()
