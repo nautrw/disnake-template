@@ -1,1 +1,1 @@
-print(__package__)
+from .general import *
