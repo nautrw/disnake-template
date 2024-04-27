@@ -8,6 +8,9 @@ class Developer(commands.Cog):
 
     @commands.slash_command()
     async def ping(self, inter: disnake.ApplicationCommandInteraction):
+        """
+        Pong!
+        """
         await inter.response.send_message("Pong!")
 
 
