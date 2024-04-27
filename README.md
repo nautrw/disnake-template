@@ -1,10 +1,6 @@
 # disnake-template
-
-## config.json
-While I develop this template, the `config.json` file will be private. It should be in this format:
-```json
-{
-    "bot": "",
-    "test_guilds": []
-}
-```
+This is an opinionated template for disnake bots.
+I made this how I like it.
+It has one command merely to serve as an example on how to extend and program the bot.
+There is a template for the configuration file in `src/core` named `config.json`.
+You run this by running the command `python -m src`.
