@@ -34,13 +34,13 @@ class Bot(commands.InteractionBot):
         )
 
     async def on_connect(self):
-        logger.success(f"Successfully logged in as {self.user} (ID: {self.user.id})")
-        logger.success(f"Connected to {len(self.guilds)} guilds")
-        logger.success(f"Using Disnake version {disnake.__version__}")
-        logger.success(f"Using Python version {sys.version}")
-        logger.success(
-            f"Platform: {platform.system()} {platform.release()} {os.name}\n"
+        logger.info(f"Connected to {len(self.guilds)} guilds")
+        logger.info(f"Using Disnake version {disnake.__version__}")
+        logger.info(f"Using Python version {sys.version}")
+        logger.info(
+            f"Using platform {platform.system()} {platform.release()} {os.name}"
         )
+        logger.success(f"Successfully logged in as {self.user} (ID: {self.user.id})")
 
     def main(self):
         self.load_extensions(self.config["exts"])
