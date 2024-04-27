@@ -1,10 +1,12 @@
-import disnake
-from disnake.ext import commands
-from loguru import logger
-import src.utils as utils
 import os
 import platform
 import sys
+
+import disnake
+from disnake.ext import commands
+from loguru import logger
+
+import src.utils as utils
 
 config = utils.general.load_configuration()
 

@@ -1,5 +1,6 @@
 import json
-import os, sys
+import os
+import sys
 
 
 def load_configuration():
