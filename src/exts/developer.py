@@ -7,9 +7,9 @@ class Developer(commands.Cog):
         self.bot = bot
 
     @commands.slash_command()
-    async def ping(self, inter: disnake.ApplicationCommandInteraction):
+    async def ping(self, inter: disnake.ApplicationCommandInteraction) -> None:
         """
-        Pong!
+        Returns the bot's ping.
         """
         await inter.response.send_message("Pong!")
 
