@@ -21,7 +21,7 @@ class Bot(commands.InteractionBot):
         main: Starts the bot.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Initializes the bot's class with configuration and utilities, and sets up basic settings.
         """
