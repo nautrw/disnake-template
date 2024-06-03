@@ -1,3 +1,2 @@
 disnake
 loguru
-jsonschema
