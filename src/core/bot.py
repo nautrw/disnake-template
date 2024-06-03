@@ -10,7 +10,7 @@ from loguru import logger
 import src.utils as utils
 
 # Load the bot's documentation from the configuration file.
-config = utils.general.load_configuration()
+config = utils.general.load_configuration("src/core/config.json")
 
 
 class Bot(commands.InteractionBot):

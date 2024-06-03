@@ -1,11 +1,7 @@
 import json
 import os
-import sys
 
 
-def load_configuration():
+def load_configuration(config_directory: str):
     """Loads the bot's configuration from src/core/config.json."""
-    if os.path.isfile("src/core/config.json"):
-        return json.load(open("src/core/config.json"))
-    else:
-        sys.exit("src/core/config.json not found.")
+    return json.load(open(config_directory)) # Json already handles errors
