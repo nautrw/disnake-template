@@ -7,10 +7,7 @@ import disnake
 from disnake.ext import commands
 from loguru import logger
 
-import src.utils as utils
-
-# Load the bot's documentation from the configuration file.
-config = utils.general.load_configuration("src/core/config.json")
+from src.core.configuration import configuration as config
 
 
 class Bot(commands.InteractionBot):
@@ -26,7 +23,6 @@ class Bot(commands.InteractionBot):
         Initializes the bot's class with configuration and utilities, and sets up basic settings.
         """
         self.config: dict = config
-        self.utils = utils
 
         super().__init__(test_guilds=config["test_guilds"])
 
