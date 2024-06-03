@@ -28,7 +28,7 @@ class Bot(commands.InteractionBot):
         self.config: dict = config
         self.utils = utils
 
-    super().__init__(test_guilds=config["test_guilds"])
+        super().__init__(test_guilds=config["test_guilds"])
 
     def load_extensions(self, exts_list: List[str]) -> None:
         """
